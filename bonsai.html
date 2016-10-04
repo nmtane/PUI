@@ -7,23 +7,21 @@
   	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Adding jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
-
-
-<!-- My js file -->
-<script src="js/bonsaiscript.js"></script>
 
 <!-- My style sheet -->
 <link rel = "stylesheet" href = "css/bonsaistyle.css">  
   </head>
 
 <body>
-<div class="jumbotron text-center">
-  <h1>BONSAI</h1>
-  <p>Trim your to-dos</p> 
+<div id="title" class ="container">
+	<div class = "row">
+		<div class = "col-xs-12">
+			<div> 
+  				<jumbotron>BONSAI</jumbotron>
+ 					<h3>Trim your to-dos</h3> 
+			</div>
+		</div>
+	</div>
 </div>
 
 
@@ -31,7 +29,7 @@
 <div class="container">
   <div class="row">
 	<div class="col-xs-9">
-		<button onclick="addTask()">+ Task</button>
+		<button type="button" class="btn btn-secondary" onclick="addTask()">+ Task</button>
 	</div>
 	<div class="col-xs-3">  
 	  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -50,7 +48,7 @@
 
   <div class="row">
 	<div class="col-xs-9">
-	  <button onclick="addMember()">+ Member</button>
+	  <button type="button" class="btn btn-secondary" onclick="addMember()">+ Member</button>
 	</div>
 	<div class="col-xs-3">  
 	  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -61,7 +59,7 @@
 
   <div class="row">
 	<div class="col-xs-12">
-	  <button onclick="addGroup()">+ Group</button>
+	  <button type="button" class="btn btn-secondary" onclick="addGroup()">+ Group</button>
 	</div>
 	<!-- <div class="col-xs-3">
 	  <button onclick="deleteTask()">Delete task</button>
@@ -84,7 +82,14 @@
 
 
 
+<!-- Adding jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
 
+
+<!-- My js file -->
+<script src="js/bonsaiscript.js"></script>
 
 
 

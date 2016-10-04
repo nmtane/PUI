@@ -19,6 +19,12 @@ body {
 	font-size: 30px;
 }
 
+.btn-primary {
+    font-size: 20px;
+    background-color: #f9d6d6;
+    color: black;
+}
+
 
 .list-group {
 	margin: 30px;
@@ -26,4 +32,9 @@ body {
 
 ul {
   list-style-type: none;
+}
+
+#title {
+    text-align: center;
+    font-size: 60px;
 }

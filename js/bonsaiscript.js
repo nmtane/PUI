@@ -11,11 +11,11 @@ function addTask() {
 	//creates a new list item and a variable for it
 	var task = document.createElement("LI");
 	//turns the list item text into a textnode
-	var textnode = document.createTextNode(listItem);
+	var textnode = document.createTextNode("	" + listItem);
 	//creates a delete button and a variable for it
 	var deleteButton = document.createElement("BUTTON");
 	//adds a class to the delete button
-	deleteButton.className = "deletebutton";
+	deleteButton.className = "btn btn-primary";
 	//creates text for the button
 	var buttonText = document.createTextNode("Delete Task");
 	//adds the button text to the delete button created above
@@ -28,6 +28,8 @@ function addTask() {
 	document.getElementById("toDos").appendChild(task);
 	
 }
+
+
 
 
 // function deleteTask(){
@@ -58,7 +60,7 @@ function addTask() {
 //which takes click as the event listener (i.e., what action is being done)
 //.deletebutton as the class of item that click is being done on
 //and the function deleteTask() as what action should then be performed
-    $(document).on('click', '.deletebutton', function deleteTask() {
+    $(document).on('click', '.btn-primary', function deleteTask() {
     	//this is the item that's being clicked on (i.e., the given deletebutton)
     	//and it's removing the parent of the item/delete button
         $(this).parent().remove();
