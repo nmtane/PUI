@@ -1,0 +1,29 @@
+
+body {
+    
+    font-family: Optima, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    color: black;
+    margin: 30px;
+    background-color:#D7F7EF;
+    
+}
+
+.jumbotron {
+	 background-color:#D7F7EF;
+}
+
+.btn {
+	margin: 30px;
+	font-size: 30px;
+}
+
+
+.list-group {
+	margin: 30px;
+}
+
+ul {
+  list-style-type: none;
+}

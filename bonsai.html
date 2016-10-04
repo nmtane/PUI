@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>Bonsai</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Adding jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+
+
+<!-- My js file -->
+<script src="js/bonsaiscript.js"></script>
+
+<!-- My style sheet -->
+<link rel = "stylesheet" href = "css/bonsaistyle.css">  
+  </head>
+
+<body>
+<div class="jumbotron text-center">
+  <h1>BONSAI</h1>
+  <p>Trim your to-dos</p> 
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+	<div class="col-xs-9">
+		<button onclick="addTask()">+ Task</button>
+	</div>
+	<div class="col-xs-3">  
+	  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+	Group
+	<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+			<li><a href="#">Action</a></li>
+			<li><a href="#">Another action</a></li>
+			<li><a href="#">Something else here</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a href="#">Separated link</a></li>
+  		</ul>
+	</div>
+  </div>
+
+  <div class="row">
+	<div class="col-xs-9">
+	  <button onclick="addMember()">+ Member</button>
+	</div>
+	<div class="col-xs-3">  
+	  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+	Tasks
+	<span class="caret"></span>
+	</div>
+  </div>
+
+  <div class="row">
+	<div class="col-xs-12">
+	  <button onclick="addGroup()">+ Group</button>
+	</div>
+	<!-- <div class="col-xs-3">
+	  <button onclick="deleteTask()">Delete task</button>
+	</div> -->
+	</div>
+	<br></br>
+   <div class="row">
+	<div class="col-xs-12">
+	  <ul id="toDos">
+<!--   <li class="list-group-item">Task 1</li>
+  <li class="list-group-item">Task 2</li>
+  <li class="list-group-item">Task 3</li>
+  <li class="list-group-item">Task 4</li>
+  <li class="list-group-item">Task 5</li> -->
+</ul>
+	</div>
+	</div>
+  </div>
+</div>
+
+
+
+
+
+
+
+  </body>
+</html>
