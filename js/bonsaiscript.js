@@ -8,6 +8,7 @@ function addTask() {
 	// creates a new checkbox element and a variable for it
 	var checkbox = document.createElement("INPUT");
 	checkbox.setAttribute("type", "checkbox");
+	checkbox.className = "checker";
 	//creates a new list item and a variable for it
 	var task = document.createElement("LI");
 	//turns the list item text into a textnode
@@ -65,6 +66,14 @@ function addTask() {
     	//and it's removing the parent of the item/delete button
         $(this).parent().remove();
     });
+
+//this will strike through upon checking the checkbox, but does not "unstrike"
+    $(document).on('click', '.checker', function strikeThrough() {
+    	
+        $(this).parent().wrap("<strike>");
+    });
+
+
 
     
  

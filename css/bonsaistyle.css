@@ -11,12 +11,12 @@ body {
 }
 
 .jumbotron {
-	 background-color:#D7F7EF;
+     background-color:#D7F7EF;
 }
 
 .btn {
-	margin: 30px;
-	font-size: 30px;
+    margin: 30px;
+    font-size: 30px;
 }
 
 .btn-primary {
@@ -27,7 +27,7 @@ body {
 
 
 .list-group {
-	margin: 30px;
+    margin: 30px;
 }
 
 ul {
