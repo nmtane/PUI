@@ -67,14 +67,26 @@ function addTask() {
         $(this).parent().remove();
     });
 
-//this will strike through upon checking the checkbox, but does not "unstrike"
+// this will listen for the click event on the class .checker, and run the strikeThrough function on the object
     $(document).on('click', '.checker', function strikeThrough() {
+
+    	console.log(this.checked);
     	
-        $(this).parent().wrap("<strike>");
+    	if(this.checked) {
+    		$(this).parent().css("text-decoration", "line-through");
+    	}
+
+    	else {
+    		$(this).parent().css("text-decoration", "none");
+    	}
+        
     });
 
 
 
-    
+   
+	
+
+	
  
 

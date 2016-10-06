@@ -5,13 +5,13 @@ body {
     font-size: 30px;
     font-style: normal;
     color: black;
-    margin: 30px;
     background-color:#D7F7EF;
     
 }
 
 .jumbotron {
      background-color:#D7F7EF;
+     text-align: center;
 }
 
 .btn {
