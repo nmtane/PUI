@@ -1,7 +1,16 @@
-
+// <img id="don" src="https://www.google.com/imgres?imgurl=http%3A%2F%2Fflavorwire.files.wordpress.com%2F2012%2F03%2Fdraper2.jpg&imgrefurl=http%3A%2F%2Fflavorwire.com%2F267713%2F40-of-don-drapers-best-lines&docid=NkcTKKj-0DNcoM&tbnid=xAngTgKElJSzVM%3A&w=600&h=432&bih=677&biw=991&ved=0ahUKEwiIxKzT_-HPAhUDHx4KHUIGBtUQMwhQKAYwBg&iact=mrc&uact=8">;
+// var don = document.getElementById("don").src;
+// var betty;
+// var sally;
+// var bobby;
 
 function addTask() {
-	var listItem = prompt("What would like you do?");
+	var listItem = prompt("Add new task");
+	var assignedTo = prompt("Who should do this task?");
+	var personAssigned = document.createTextNode(assignedTo);
+	var personLabel = document.createElement("BUTTON");
+	personLabel.className = "btn btn-info taskOwner";
+	personLabel.appendChild(personAssigned);
 	// //console.log(listItem);
 	// finds my pre-existing list in html to add items to
 	var list = document.querySelector("#toDos");
@@ -11,20 +20,23 @@ function addTask() {
 	checkbox.className = "checker";
 	//creates a new list item and a variable for it
 	var task = document.createElement("LI");
+	task.className = "promptAnswer";
 	//turns the list item text into a textnode
-	var textnode = document.createTextNode("	" + listItem);
+	var textnode = document.createTextNode(" " + listItem);
 	//creates a delete button and a variable for it
 	var deleteButton = document.createElement("BUTTON");
 	//adds a class to the delete button
-	deleteButton.className = "btn btn-primary";
+	deleteButton.className = "btn btn-primary deleteMe";
 	//creates text for the button
 	var buttonText = document.createTextNode("Delete Task");
 	//adds the button text to the delete button created above
 	deleteButton.appendChild(buttonText);
 	//adds the check box, item text, and delete button to the list item
 	task.appendChild(checkbox);
+	task.appendChild(personLabel);
 	task.appendChild(textnode);
 	task.appendChild(deleteButton);
+	
 	//adds the new list item to the prexisting list I had in html
 	document.getElementById("toDos").appendChild(task);
 	
@@ -40,7 +52,7 @@ function addTask() {
 
 // }
 	
-	function deleteTask() {
+	// function deleteTask() {
 		// $(".button").click(function(){
 		//     $(this).parent().remove();
 		// });
@@ -52,7 +64,7 @@ function addTask() {
 		// task.parentNode.removeChild(itemToDelete);
 		// return false;
 		// console.log(this);
-	}
+	// }
 	
 	
 
@@ -61,7 +73,7 @@ function addTask() {
 //which takes click as the event listener (i.e., what action is being done)
 //.deletebutton as the class of item that click is being done on
 //and the function deleteTask() as what action should then be performed
-    $(document).on('click', '.btn-primary', function deleteTask() {
+    $(document).on('click', '.deleteMe', function deleteTask() {
     	//this is the item that's being clicked on (i.e., the given deletebutton)
     	//and it's removing the parent of the item/delete button
         $(this).parent().remove();
